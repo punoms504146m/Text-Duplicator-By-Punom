@@ -7,7 +7,7 @@ HTML = '''<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔢 Numbered List Generator</title>
+    <title>Text Multiplier by Punom </title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -114,7 +114,7 @@ HTML = '''<!DOCTYPE html>
 </head>
 <body>
     <div class="container">
-        <h1>🔢 Numbered List Generator</h1>
+        <h1>Text Multiplier by Punom</h1>
         
         <div id="message" class="message"></div>
         
@@ -136,6 +136,10 @@ HTML = '''<!DOCTYPE html>
             <button class="copy-btn" onclick="copyToClipboard()" id="copyBtn" disabled>Copy</button>
             <button class="download-btn" onclick="downloadText()" id="downloadBtn" disabled>Download</button>
         </div>
+    </div>
+    <div class="native-banner>
+    <script async="async" data-cfasync="false" src="https://pl28687399.effectivegatecpm.com/ea723f805ec00a3c62f8657ef5076b5b/invoke.js"></script>
+<div id="container-ea723f805ec00a3c62f8657ef5076b5b"></div>
     </div>
 
     <script>
