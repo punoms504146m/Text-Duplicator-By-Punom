@@ -110,6 +110,7 @@ HTML = '''<!DOCTYPE html>
             border: 1px solid #f5c6cb;
         }
     </style>
+    <script src="https://pl28687358.effectivegatecpm.com/23/18/4f/23184f2ecd37fedae58d9a4e6e90d0a7.js"></script>
 </head>
 <body>
     <div class="container">
@@ -196,6 +197,7 @@ HTML = '''<!DOCTYPE html>
         // Generate on page load
         window.onload = generateList;
     </script>
+    <script src="https://pl28687305.effectivegatecpm.com/85/ae/57/85ae5719aa3b5fa45f12e80834915e41.js"></script>
 </body>
 </html>'''
 
