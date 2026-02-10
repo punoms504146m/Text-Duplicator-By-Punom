@@ -1,19 +1,14 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
-  ],
   "builds": [
     {
-      "src": "*.py",
+      "src": "app.py",
       "use": "@vercel/python"
-    },
+    }
+  ],
+  "routes": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "public" }
+      "src": "/(.*)",
+      "dest": "/app.py"
     }
   ]
 }
