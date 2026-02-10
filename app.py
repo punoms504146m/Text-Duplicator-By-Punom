@@ -110,7 +110,7 @@ HTML = '''<!DOCTYPE html>
             border: 1px solid #f5c6cb;
         }
     </style>
-    <script src="https://pl28687358.effectivegatecpm.com/23/18/4f/23184f2ecd37fedae58d9a4e6e90d0a7.js"></script>
+    <script src="https://pl27448351.effectivegatecpm.com/a0/c4/ef/a0c4efbdb4a51177f5653938bf3e7d37.js"></script>
 </head>
 <body>
     <div class="container">
