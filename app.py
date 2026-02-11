@@ -122,11 +122,6 @@ HTML = '''<!DOCTYPE html>
             <label for="number">Number of Items:</label>
             <input type="number" id="number" value="5" min="1">
         </div>
-        <div class="button-group">
-            <button class="copy-btn" onclick="copyToClipboard()" id="copyBtn" disabled>Copy</button>
-            <button class="download-btn" onclick="downloadText()" id="downloadBtn" disabled>Download</button>
-        </div>
-
         
         <div class="input-group">
             <label for="word">Text for Each Item:</label>
@@ -134,6 +129,10 @@ HTML = '''<!DOCTYPE html>
         </div>
         
         <button onclick="generateList()">Generate List</button>
+        <div class="button-group">
+            <button class="copy-btn" onclick="copyToClipboard()" id="copyBtn" disabled>Copy</button>
+            <button class="download-btn" onclick="downloadText()" id="downloadBtn" disabled>Download</button>
+        </div>
         
         <div id="output">Your list will appear here...</div>
         
