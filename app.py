@@ -7,7 +7,7 @@ HTML = '''<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Multiplier by Punom </title>
+    <title>Text Multiplier by Punom</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -41,7 +41,7 @@ HTML = '''<!DOCTYPE html>
             font-weight: bold;
             color: #555;
         }
-        input {
+        input[type="text"], input[type="number"] {
             width: 100%;
             padding: 10px;
             border: 2px solid #ddd;
@@ -109,6 +109,27 @@ HTML = '''<!DOCTYPE html>
             color: #721c24;
             border: 1px solid #f5c6cb;
         }
+        /* Mode selection styles */
+        .mode-group {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .mode-option {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .mode-option label {
+            display: inline;
+            font-weight: normal;
+            margin-bottom: 0;
+        }
+        .mode-option input[type="radio"] {
+            width: auto;
+            margin: 0;
+        }
     </style>
     <script src="https://pl27448351.effectivegatecpm.com/a0/c4/ef/a0c4efbdb4a51177f5653938bf3e7d37.js"></script>
 </head>
@@ -127,6 +148,19 @@ HTML = '''<!DOCTYPE html>
             <label for="word">Text for Each Item:</label>
             <input type="text" id="word" value="Item">
         </div>
+
+        <!-- New mode selection -->
+        <div class="mode-group">
+            <span style="font-weight: bold; color: #555;">Output Mode:</span>
+            <div class="mode-option">
+                <input type="radio" id="modeWithSerial" name="mode" value="withSerial" checked>
+                <label for="modeWithSerial">With Serial Numbers</label>
+            </div>
+            <div class="mode-option">
+                <input type="radio" id="modeWithoutSerial" name="mode" value="withoutSerial">
+                <label for="modeWithoutSerial">Without Serial Numbers</label>
+            </div>
+        </div>
         
         <button onclick="generateList()">Generate List</button>
         <div class="button-group">
@@ -135,12 +169,11 @@ HTML = '''<!DOCTYPE html>
         </div>
         
         <div id="output">Your list will appear here...</div>
-        
-
     </div>
-    <div class="native-banner>
-    <script async="async" data-cfasync="false" src="https://pl28687399.effectivegatecpm.com/ea723f805ec00a3c62f8657ef5076b5b/invoke.js"></script>
-<div id="container-ea723f805ec00a3c62f8657ef5076b5b"></div>
+
+    <div class="native-banner">
+        <script async="async" data-cfasync="false" src="https://pl28687399.effectivegatecpm.com/ea723f805ec00a3c62f8657ef5076b5b/invoke.js"></script>
+        <div id="container-ea723f805ec00a3c62f8657ef5076b5b"></div>
     </div>
 
     <script>
@@ -155,6 +188,7 @@ HTML = '''<!DOCTYPE html>
         function generateList() {
             const number = parseInt(document.getElementById('number').value);
             const word = document.getElementById('word').value;
+            const mode = document.querySelector('input[name="mode"]:checked').value;
             
             if (!number || number < 1) {
                 showMessage('Please enter a valid number', 'error');
@@ -167,8 +201,14 @@ HTML = '''<!DOCTYPE html>
             }
             
             let output = '';
-            for (let i = 0; i < number; i++) {
-                output += `${i + 1}. ${word}\n`;
+            if (mode === 'withSerial') {
+                for (let i = 0; i < number; i++) {
+                    output += `${i + 1}. ${word}\n`;
+                }
+            } else {
+                for (let i = 0; i < number; i++) {
+                    output += `${word}\n`;
+                }
             }
             
             document.getElementById('output').textContent = output;
