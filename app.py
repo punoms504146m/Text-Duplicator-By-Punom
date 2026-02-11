@@ -171,11 +171,6 @@ HTML = '''<!DOCTYPE html>
         <div id="output">Your list will appear here...</div>
     </div>
 
-    <div class="native-banner">
-        <script async="async" data-cfasync="false" src="https://pl28687399.effectivegatecpm.com/ea723f805ec00a3c62f8657ef5076b5b/invoke.js"></script>
-        <div id="container-ea723f805ec00a3c62f8657ef5076b5b"></div>
-    </div>
-
     <script>
         function showMessage(text, type) {
             const msg = document.getElementById('message');
